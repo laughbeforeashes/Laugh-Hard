@@ -17,6 +17,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
         .button-container {
             margin-bottom: 30px; /* Space between joke buttons and the image */
@@ -27,8 +28,8 @@
         button {
             display: block;
             width: 220px;
-            margin: 20px auto;
-            padding: 15px;
+            margin: 10px auto;
+            padding: 12px;
             font-size: 18px;
             cursor: pointer;
             border: none;
@@ -41,8 +42,7 @@
             background-color: gray; /* Button changes on hover */
         }
         .store-button {
-            margin-top: auto; /* Pushes it to the bottom */
-            padding-bottom: 40px; /* Extra space from bottom */
+            padding: 12px; /* Match other buttons */
         }
         img {
             width: 200px; /* Adjust image size */
@@ -92,10 +92,10 @@
 
     <!-- PNG Image in the middle -->
     <div class="image-container">
-        <img src="https://raw.githubusercontent.com/laughbeforeashes/Laugh-Hard/main/this-01.jpg" alt="Joke Image">
+        <img src="https://raw.githubusercontent.com/laughbeforeashes/Laugh-Hard/main/Logo.png" alt="Logo">
     </div>
 
-    <!-- Store button, now pushed to the bottom -->
+    <!-- Store button, now matching the same size as other buttons -->
     <button class="store-button" onclick="window.location.href='https://yourstorelink.com'">Visit Our Store</button>
 
 </body>
