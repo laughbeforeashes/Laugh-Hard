@@ -6,6 +6,8 @@
     <title>Joke Selector</title>
     <style>
         body {
+            background-color: black; /* Black background */
+            color: white; /* White text for contrast */
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
@@ -15,11 +17,19 @@
         }
         button {
             display: block;
-            width: 200px;
+            width: 220px;
             margin: 20px auto;
             padding: 15px;
             font-size: 18px;
             cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            background-color: white; /* White buttons for contrast */
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: gray; /* Button changes on hover */
         }
     </style>
     <script>
