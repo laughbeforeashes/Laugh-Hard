@@ -19,7 +19,10 @@
             justify-content: center;
         }
         .button-container {
-            margin-bottom: 50px; /* Space between joke buttons and store button */
+            margin-bottom: 30px; /* Space between joke buttons and the image */
+        }
+        .image-container {
+            margin-bottom: 30px; /* Space between image and store button */
         }
         button {
             display: block;
@@ -40,6 +43,10 @@
         .store-button {
             margin-top: auto; /* Pushes it to the bottom */
             padding-bottom: 40px; /* Extra space from bottom */
+        }
+        img {
+            width: 200px; /* Adjust image size */
+            height: auto;
         }
     </style>
     <script>
@@ -81,6 +88,11 @@
         <button onclick="getRandomLink('light')">Light Humor</button>
         <button onclick="getRandomLink('dark')">Dark Humor</button>
         <button onclick="getRandomLink('extreme')">Extreme Dark Humor</button>
+    </div>
+
+    <!-- PNG Image in the middle -->
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/laughbeforeashes/Laugh-Hard/main/this-01.jpg" alt="Joke Image">
     </div>
 
     <!-- Store button, now pushed to the bottom -->
