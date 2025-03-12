@@ -10,6 +10,9 @@
             text-align: center;
             margin-top: 50px;
         }
+        .button-container {
+            margin-bottom: 50px; /* Space between joke buttons and store button */
+        }
         button {
             display: block;
             width: 200px;
@@ -53,9 +56,15 @@
 </head>
 <body>
     <h1>Choose Your Joke Style</h1>
-    <button onclick="getRandomLink('light')">Light Humor</button>
-    <button onclick="getRandomLink('dark')">Dark Humor</button>
-    <button onclick="getRandomLink('extreme')">Extreme Dark Humor</button>
+    
+    <div class="button-container">
+        <button onclick="getRandomLink('light')">Light Humor</button>
+        <button onclick="getRandomLink('dark')">Dark Humor</button>
+        <button onclick="getRandomLink('extreme')">Extreme Dark Humor</button>
+    </div>
+
+    <!-- Store button, now separated at the bottom -->
     <button onclick="window.location.href='https://yourstorelink.com'">Visit Our Store</button>
+
 </body>
 </html>
